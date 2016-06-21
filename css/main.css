@@ -2758,7 +2758,6 @@ span.stButton_gradient,
 
 .wip{
   border-radius: 5px;
-  padding: 2px;
   width: 100%;
 
 }
@@ -2806,8 +2805,9 @@ span.stButton_gradient,
 
 
 .imagecm{
-  padding: 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 2px 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 #crossfade > img { 
