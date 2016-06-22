@@ -398,7 +398,7 @@ ul.sub-menu {
 #footer {
   padding-bottom: 10px;
   background-image: url(../images/home/footer.png);
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
 }
@@ -3115,8 +3115,9 @@ margin: 10px 30px 10px 10px;
 
 .btn-portfolio {
   background-color: rgba(0, 0, 0, 0);
-  border: 3px solid #4FCCCD;
+  border: 3px solid #aad;
   color: #797979;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing:0;
@@ -3125,4 +3126,9 @@ margin: 10px 30px 10px 10px;
   padding: 25px 53px;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
+}
+
+.btn-portfolio:hover {
+  background-color: #aad;
+  color: white;
 }
