@@ -117,7 +117,6 @@ jQuery(function($) {'use strict';
 
 });
 
-});
 
 $(document).ready(function() {
   $("#cf_onclick").click(function() {
@@ -130,4 +129,16 @@ $(document).ready(function() {
 		openEffect	: 'none',
 		closeEffect	: 'none'
 	});
+});
+
+});
+
+
+
+var $root = $('html, body');
+$('.scroll').click(function() {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top-300
+    }, 500);
+    return false;
 });

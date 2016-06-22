@@ -125,44 +125,44 @@
                                     <div align="center">
                                     
 
-                                        <img class="slogo" src ="images/logo/udg.jpg">
+                                        <a href="#udg" class="scroll"><img class="slogo" src ="images/logo/udg.jpg"></a>
 
-                                        <img  class="slogo" src ="images/logo/af1.jpg">
-                                        <img class="slogo" src ="images/logo/ps.jpg">
-                                        <img class="slogo" src ="images/logo/pg.jpg">
-                                        <img class="slogo" src ="images/logo/udo.jpg">
-                                        <img class="slogo" src ="images/logo/af2.jpg">
-                                        <img class="slogo" src ="images/logo/cr.jpg">
-                                        <img class="slogo" src ="images/logo/gl.jpg">
-                                        <img class="slogo" src ="images/logo/ec.jpg">
-                                        <img class="slogo" src ="images/logo/fac.jpg">
-                                        <img class="slogo" src ="images/logo/tink.jpg">
-                                        <img class="slogo" src ="images/logo/tkti.jpg">
-                                        <img class="slogo" src ="images/logo/intiit.jpg">
-                                        <img class="slogo" src ="images/logo/hf.jpg">
-                                        <img  class="slogo" src ="images/logo/mega.jpg">
+                                        <a href="#af1" class="scroll"><img  class="slogo" src ="images/logo/af1.jpg"></a>
+                                        <a href="#ps" class="scroll"><img class="slogo" src ="images/logo/ps.jpg"></a>
+                                        <a href="#pg" class="scroll"><img class="slogo" src ="images/logo/pg.jpg"></a>
+                                        <a href="#udo" class="scroll"><img class="slogo" src ="images/logo/udo.jpg"></a>
+                                        <a href="#af2" class="scroll"><img class="slogo" src ="images/logo/af2.jpg"></a>
+                                        <a href="#cr" class="scroll"><img class="slogo" src ="images/logo/cr.jpg"></a>
+                                        <a href="#gl" class="scroll"><img class="slogo" src ="images/logo/gl.jpg"></a>
+                                        <a href="#ec" class="scroll"><img class="slogo" src ="images/logo/ec.jpg"></a>
+                                        <a href="#fac" class="scroll"><img class="slogo" src ="images/logo/fac.jpg"></a>
+                                        <a href="#tink" class="scroll"><img class="slogo" src ="images/logo/tink.jpg"></a>
+                                        <a href="#tkti" class="scroll"><img class="slogo" src ="images/logo/tkti.jpg"></a>
+                                        <a href="#intiit" class="scroll"><img class="slogo" src ="images/logo/intiit.jpg"></a>
+                                        <a href="#hf" class="scroll"><img class="slogo" src ="images/logo/hf.jpg"></a>
+                                        <a href="#mega" class="scroll"><img  class="slogo" src ="images/logo/mega.jpg"></a>
 
                                         <br><br>
                                         
                           
      
                         
-                                        <img class="logo" src ="images/logo/udg.jpg">
+                                        <a id="udg"><img class="logo" src ="images/logo/udg.jpg"></a>
 
-                                        <img  class="logo" src ="images/logo/af1.jpg">
-                                        <img class="logo" src ="images/logo/ps.jpg">
-                                        <img class="logo" src ="images/logo/pg.jpg">
-                                        <img class="logo" src ="images/logo/udo.jpg">
-                                        <img class="logo" src ="images/logo/af2.jpg">
-                                        <img class="logo" src ="images/logo/cr.jpg">
-                                        <img class="logo" src ="images/logo/gl.jpg">
-                                        <img class="logo" src ="images/logo/ec.jpg">
-                                        <img class="logo" src ="images/logo/fac.jpg">
-                                        <img class="logo" src ="images/logo/tink.jpg">
-                                        <img class="logo" src ="images/logo/tkti.jpg">
-                                        <img class="logo" src ="images/logo/intiit.jpg">
-                                        <img class="logo" src ="images/logo/hf.jpg">
-                                        <img  class="logo" src ="images/logo/mega.jpg">
+                                        <a id="af1"><img  class="logo" src ="images/logo/af1.jpg"></a>
+                                        <a id="ps"><img class="logo" src ="images/logo/ps.jpg"></a>
+                                        <a id="pg"><img class="logo" src ="images/logo/pg.jpg"></a>
+                                         <a id="udo"><img class="logo" src ="images/logo/udo.jpg"></a>
+                                        <a id="af2"><img class="logo" src ="images/logo/af2.jpg"></a>
+                                        <a id="cr"><img class="logo" src ="images/logo/cr.jpg"></a>
+                                        <a id="gl"><img class="logo" src ="images/logo/gl.jpg"></a>
+                                        <a id="ec"><img class="logo" src ="images/logo/ec.jpg"></a>
+                                        <a id="fac"><img class="logo" src ="images/logo/fac.jpg"></a>
+                                        <a id="tink"> <img class="logo" src ="images/logo/tink.jpg"></a>
+                                        <a id="tkti"> <img class="logo" src ="images/logo/tkti.jpg"></a>
+                                        <a id="intiit"><img class="logo" src ="images/logo/intiit.jpg"></a>
+                                       <a id="hf"> <img class="logo" src ="images/logo/hf.jpg"></a>
+                                       <a id="mega"> <img  class="logo" src ="images/logo/mega.jpg"></a>
                                     </div>
 
 
@@ -199,7 +199,17 @@
     </footer>
 
 
+<script>
 
+var $root = $('html, body');
+$('a.scroll').click(function() {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top-300
+    }, 500);
+    return false;
+});
+
+</script>
 
 
 

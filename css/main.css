@@ -12,14 +12,15 @@
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
   @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,400italic,600italic,700italic,400,300,600,700);
+  @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
 
 
   body {
     background: #fff;
-    font-family: 'Source Sans', sans-serif;
-    font-weight: 280;
+    font-family: 'Lora', sans-serif;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 25.88px;
     color: #000;
   }
 
@@ -2764,16 +2765,21 @@ span.stButton_gradient,
 
 
   .btn-projects {
-    font-size: 15px;
+    font-size: 18px;
     color: #9191ba;
     
-    border: 2px solid #9191ba;
-    border-radius: 45px;
+    border: 3px solid #9191ba;
+
+    border-radius: 80px;
 
     font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    padding: 15px 45px;
+
+    padding: 80px 0px;
   }
+
+  .btn-projects:hover {
+  background:#;
+}
 
   .h2pad{
     padding-left: 10px;
@@ -2985,9 +2991,11 @@ div.soft img {
     height: auto;
 }
 
-div.desc {
+.desc {
+
     font-size: 12px;
-    text-align: center;
+    line-height:19px;
+
 }
 
 svg {width: 100%;
@@ -3013,9 +3021,9 @@ th {
 }
 
 img.proto{
-  padding: 30px;
-  border: 5px;
-  border-color: gray;
+  padding: 0px;
+  margin-bottom: 40px;
+
 }
 
 img.half{
@@ -3101,6 +3109,20 @@ margin: 10px 30px 10px 10px;
 }
 
 .des{
-  font-size: 18px;
-  font-family: PT sans;
+  font-size: 13px;
+  font-family: Libre Baskerville;
+}
+
+.btn-portfolio {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #4FCCCD;
+  color: #797979;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing:0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 25px 53px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
