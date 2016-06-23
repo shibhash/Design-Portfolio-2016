@@ -317,7 +317,7 @@ ul.sub-menu {
 }
 
 #header .navbar-nav li ul.sub-menu li a{
-  color: #818285;
+  color: #545454;
   padding: 5px 0;
   font-size: 13px;
   display: block;
@@ -526,7 +526,7 @@ ul.sub-menu {
 
 .copyright-text{
   margin-top: 70px;
-  color: #fff;
+  color: #556;
   font-size: 16px;  
   padding-bottom: 15px;
 }
@@ -654,7 +654,7 @@ ul.sub-menu {
 #action {
   background-image: url(../images/home/tour-bg.png);
   background-color: #fbfafa;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   height: 157px;
 
   background-position: center;
