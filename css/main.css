@@ -3157,3 +3157,29 @@ margin: 10px 30px 10px 10px;
 }
 
 
+.btn-nav {
+  width: 100%;
+
+  background-color: #aad;
+  color: #fff;
+
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  border-left: 0px solid #fff;
+  border-right: 1px solid #fff;
+
+  margin-top: 5px;
+  border-bottom: 3px solid #2f9697;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.btn-nav:hover, 
+.btn-nav:focus{
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  opacity: .8;
+}

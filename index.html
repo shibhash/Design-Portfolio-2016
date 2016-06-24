@@ -124,8 +124,17 @@
                         .domain([0, d3.max(layers0.concat(layers1), function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); })])
                         .range([height, 0]);
 
-                    var color = d3.scale.linear()
-                        .range(["#aad", "#556"]);
+                    var color = d3.scale.linear() 
+                     // .range(["#aad", "#556"]);
+                       //.range(["#FF5A00", "#FFAE00"]);
+                       .range(["#f11730", "#680712"]);
+                        //.range(["#b00b1e", "#0b1eb0"]);
+
+
+
+                  var opacity = d3.scale.linear() 
+                    .range([".98", "1"]);
+
 
                     var area = d3.svg.area()
                         .x(function(d) { return x(d.x); })
@@ -138,10 +147,13 @@
 
                     svg.selectAll("path")
                         .data(layers0)
-                      .enter().append("path")
+                        .enter().append("path")
                         .attr("d", area)
-                        .style("fill", function() { return color(Math.random()); });
+                        .style("opacity", function() { return opacity(Math.random()); })
+                        .style("fill", function() { return color(Math.random()); })
+                
 
+            
                     function transition() {
                       d3.selectAll("path")
                           .data(function() {
@@ -152,6 +164,7 @@
                         .transition()
                           .duration(1800)
                           .attr("d", area);
+
                     }
 
                     // Inspired by Lee Byron's test data generator.
