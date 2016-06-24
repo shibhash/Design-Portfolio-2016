@@ -2353,7 +2353,7 @@ span.stButton_gradient,
 
 .bg-404 {
   background-image: url("../images/home/tour-bg.png");
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: center top;
 }
 
