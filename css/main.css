@@ -3098,7 +3098,10 @@ p.thoughts{
 .slogo{
   max-width: 300px;
   padding-bottom:10px;
-  transition: all .2s ease-in-out;
+  
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+ 
 
 }
 
@@ -3111,6 +3114,9 @@ p.thoughts{
     -moz-transform-origin: center;
     -o-transform-origin: center;
     transform-origin: center;
+
+
+    
 }
 
 .shortnote{
