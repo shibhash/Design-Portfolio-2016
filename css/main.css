@@ -3182,3 +3182,40 @@ margin: 10px 30px 10px 10px;
   box-shadow: none;
   opacity: .8;
 }
+ 
+p.header{
+
+    font-family: 'lora', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+
+
+
+}
+
+p.gheader{
+  font-family: 'lora', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+
+    color: grey;
+
+}
+
+
+    h2.page-header{
+    font-family: 'lora', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+
+    color: grey;
+    }
+
+
+.blockhigh{
+  color: #d35400;
+  font-family:open sans; 
+  font-weight: 400;
+  font-size: 20px;
+  line-height:30px;
+}
