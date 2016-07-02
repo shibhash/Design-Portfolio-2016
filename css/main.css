@@ -2808,12 +2808,12 @@ span.stButton_gradient,
   moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 2px 2px 10px 0 rgba(0, 0, 0, 0.19);
   margin: 8px;
+
 }
 
 
 .imagecm:hover{
-  color: #aad;
-  border-color: #702340;
+  
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
        -webkit-transform: scale(1.1);
@@ -2824,7 +2824,8 @@ span.stButton_gradient,
     -moz-transform-origin: center;
     -o-transform-origin: center;
     transform-origin: center;
-    
+
+
  
 }
 
