@@ -65,7 +65,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Home</a></li>
                                          
-                        <li class="dropdown"><a href="aboutme.html">About me<i class="fa fa-angle-down"></i></a>
+                        <li class="dropdown"><a href="aboutme.html">About me<i class="fa fa-angle-down" onclick="document.location='aboutme.html';"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="aboutme.html">About me</a></li>
                                 <li><a href="hobbies.html" name ="hobbies">Hobbies</a></li>
@@ -73,7 +73,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
+                        <li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down" onclick="document.location='portfolio.html';"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="portfolio.html">Portfolio</a></li>
                                 <li><a href="blog.html">Blog</a></li>
@@ -194,8 +194,9 @@
          
                     <div align="center">
                             <div class="col-md-4 col-md-offset-4" >
-                                <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="100ms">                   
-                                <a href="portfolio.html" class="btn btn-portfolio" onmouseover="transition()">Portfolio</a>
+                                <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="100ms">  
+                                     
+                                <a href="portfolio.html" class="btn btn-portfolio" style="vertical-align:middle" onmouseover="transition()"><span>Portfolio</span></a> 
                                 </div>
                             </div>
                         </div>
