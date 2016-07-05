@@ -3243,9 +3243,12 @@ p.gheader{
 }
 
 p.projectdes{
-  margin-top: 50px;
-  padding: 15px;
-  color: white;
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 300px;
+  color:  #696969;
+
   
 
 }

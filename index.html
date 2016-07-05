@@ -98,11 +98,13 @@
     </header>
     
 
-<div class="col-sm-12 text-center">
+<div class="col-sm-12 text-center" >
 
 
 <div class="hi" onmousemove="transition()">
 <h1 class="margin-bottom" >Surreal Singularity</h1>
+    
+
             <script src="js/d3.v3.min.js"></script>
 
                 <script>
@@ -151,7 +153,7 @@
                         .attr("d", area)
                         .style("opacity", function() { return opacity(Math.random()); })
                         .style("fill", function() { return color(Math.random()); })
-                
+                    
 
             
                     function transition() {
@@ -166,6 +168,8 @@
                           .attr("d", area);
 
                     }
+
+                    
 
                     // Inspired by Lee Byron's test data generator.
                     function bumpLayer(n) {
@@ -185,9 +189,15 @@
                       for (i = 0; i < 5; ++i) bump(a);
                       return a.map(function(d, i) { return {x: i, y: Math.max(0, d)}; });
                     }
-                </script>
-</div>
 
+
+                
+
+
+                </script>
+   
+
+</div>
 </div>
                 
                 <div class="container">
