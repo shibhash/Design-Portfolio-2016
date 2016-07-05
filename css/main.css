@@ -3093,14 +3093,16 @@ p.thoughts{
 .slogo{
   max-width: 300px;
   padding-bottom:10px;
-  
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
- 
+
 
 }
 
 .slogo:hover {
+
+
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     -o-transform: scale(1.25);
@@ -3158,7 +3160,7 @@ margin: 10px 30px 10px 10px;
   margin: 50px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  
+
 }
 
 .btn-portfolio span {
