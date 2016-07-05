@@ -3138,53 +3138,33 @@ margin: 10px 30px 10px 10px;
 }
 
 .btn-portfolio {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #aad;
   border: 3px solid #aad;
-  color: #797979;
+  color: white;
   border-radius: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing:0;
+  font-size: 18px;
+  font-weight: 600;
+  
   margin-bottom: 50px;
   margin-top: 50px;
-  padding: 25px 53px;
+  padding: 25px 50px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .btn-portfolio:hover {
-  background-color: #aad;
-  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  color: #aad;
 }
 
 
-.btn-nav {
 
 
-  background-color: #aad;
-  color: #fff;
 
-  font-weight: 300;
-  letter-spacing: 5px;
-  text-transform: uppercase;
 
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
 
-  margin-top: 5px;
-  border-bottom: 3px solid #2f9697;
-  box-shadow: none;
-  padding: 10px;
-}
 
-.btn-nav:hover, 
-.btn-nav:focus{
-  color: #fff;
-  outline: none;
-  box-shadow: none;
-  opacity: .8;
-}
- 
 p.header{
 
     font-family: 'lora', sans-serif;
@@ -3220,4 +3200,12 @@ p.gheader{
   font-weight: 400;
   font-size: 20px;
   line-height:30px;
+}
+
+p.projectdes{
+  margin-top: 50px;
+  padding: 15px;
+  color: white;
+  
+
 }
