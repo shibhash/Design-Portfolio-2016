@@ -311,9 +311,9 @@ ul.sub-menu {
 }
 
 #header .navbar-nav li ul.sub-menu li a{
-  color: #545454;
+  color:  #808080;
   padding: 5px 0;
-  font-size: 13px;
+  font-size: 14px;
   display: block;
   text-transform: capitalize;
 }
