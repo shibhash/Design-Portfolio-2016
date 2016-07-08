@@ -826,6 +826,7 @@ ul.sub-menu {
 .team-single:hover .social-profile{
   background:rgba(112, 35, 64, 0.9);
   display: block;
+  cursor: pointer;
   -webkit-animation: fadeInUp 400ms;
   animation: fadeInUp 400ms;
   -webkit-transition: all 0.9s ease;
@@ -1036,6 +1037,7 @@ ul.elements li > i{
 
 .portfolio-single:hover .portfolio-view{
   display: block;
+  cursor: pointer;
   -webkit-animation: fadeInUp 400ms;
   animation: fadeInUp 400ms;
 }
@@ -1086,6 +1088,7 @@ ul.elements li > i{
 .portfolio-view .nav-pills li a:hover {
   color: #702340;
   border-color: #702340;
+
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
