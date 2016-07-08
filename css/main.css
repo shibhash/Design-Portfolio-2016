@@ -1,20 +1,20 @@
 
 
 
-  @import url(https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css);
-  @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+  
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,300i,400,400i,500,500i');
   @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
-  @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+  @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,800');
   
 
 
   body {
     background: #fff;
-    font-family: 'Lora', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25.88px;
+    font-family: 'open sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
     color: #000;
   }
 
@@ -206,7 +206,7 @@
   height: 40px;
   font-size: 18px;
   color: #818285;
-  font-weight: 300;
+  font-weight: 400;
   outline: none;
   border: 1px solid #00aeef;
   margin-top: 20px;
@@ -280,10 +280,10 @@
 
 #header .navbar-nav.navbar-right >li a {
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
   padding: 20px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 
@@ -482,7 +482,7 @@ ul.sub-menu {
 
 .form-control {
   border: 1px solid #eaeaea;
-  font-weight: 300;
+  font-weight: 400;
   outline: none;
   box-shadow: none;
   height: 40px;
@@ -500,7 +500,7 @@ ul.sub-menu {
   background-color: #4fcccd;
   color: #fff;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 5px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -694,7 +694,7 @@ ul.sub-menu {
 .action p{
   font-size: 18px;
   margin-bottom: 0;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .action .btn-common{
@@ -869,6 +869,13 @@ ul.sub-menu {
 .person-info h2 {
   font-weight: 300;
   margin-bottom: 5px;
+}
+
+
+.person-info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25.8px;
 }
 
 .person-info h3 {
@@ -1107,7 +1114,8 @@ ul.elements li > i{
   border-radius: 0;
   color: #686868;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
   padding: 0 25px;
   text-transform: capitalize;
   border: none;
@@ -3061,7 +3069,7 @@ img.udghosh{
 }
 
 p.thoughts{
-  font-family: 'Lora' , serif;
+  font-family: 'Raleway' , serif;
   font-size: 22px;
   padding-bottom: 20px;
 }
@@ -3136,8 +3144,9 @@ margin: 10px 30px 10px 10px;
 }
 
 .des{
-  font-size: 13px;
-  font-family: Libre Baskerville;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 
 
@@ -3160,8 +3169,8 @@ margin: 10px 30px 10px 10px;
   cursor: pointer;
   text-transform: uppercase;
   margin: 50px;
-  font-family: 'Lora', sans-serif;
-  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 
 }
 
@@ -3209,7 +3218,7 @@ margin: 10px 30px 10px 10px;
 
 p.header{
 
-    font-family: 'lora', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 28px;
 
@@ -3218,7 +3227,7 @@ p.header{
 }
 
 p.gheader{
-  font-family: 'lora', sans-serif;
+  font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 28px;
 
@@ -3228,7 +3237,7 @@ p.gheader{
 
 
     h2.page-header{
-    font-family: 'lora', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 28px;
 
@@ -3237,18 +3246,19 @@ p.gheader{
 
 
 .blockhigh{
+  margin-top: 20px;
   color: #d35400;
-  font-family:open sans; 
-  font-weight: 400;
-  font-size: 20px;
-  line-height:30px;
+  font-family:"Raleway",sans-serif; 
+  font-weight: 300;
+  font-size: 28px;
+  line-height:45px;
 }
 
 p.projectdes{
   position: relative;
 
-  font-size: 14px;
-  font-weight: 300px;
+  font-size: 15px;
+  font-weight: 400px;
   color:  #696969;
 
   
@@ -3258,4 +3268,16 @@ p.projectdes{
 .guitar{
    width="100%"
 
+}
+
+.boldfont{
+  font-weight: 600;
+}
+
+p.comments{
+  padding: 20px;
+  font-family: Open sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
 }

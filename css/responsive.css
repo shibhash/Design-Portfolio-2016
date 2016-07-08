@@ -249,7 +249,11 @@
   }
 
   .search {
-    top: -40px;
+    
+    
+    top:20px;
+    right: 60px;
+    
   }
 
   #header .navbar-nav.navbar-right li > a > i {
