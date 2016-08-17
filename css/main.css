@@ -2824,22 +2824,7 @@ span.stButton_gradient,
 }
 
 
-.imagecm:hover{
-  
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-       -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transform-origin: center;
-    -moz-transform-origin: center;
-    -o-transform-origin: center;
-    transform-origin: center;
 
-
- 
-}
 
 #crossfade > img { 
    
