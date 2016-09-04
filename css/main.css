@@ -7,7 +7,7 @@
   @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
   @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,800');
   @import 'https://fonts.googleapis.com/css?family=Amatic+SC';
-  @import 'https://fonts.googleapis.com/css?family=Allura';
+
 
   body {
     background: #fff;
@@ -3189,7 +3189,7 @@ margin: 10px 30px 10px 10px;
 }
 
 .btn-portfolio span:after {
-  content: '»';
+  content: "";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -3329,7 +3329,7 @@ p.comments{
 }
 
 .informal{
-  font-family: 'Allura', cursive;
+  font-family:;
 
 }
 
@@ -3350,4 +3350,9 @@ p.comments{
 
 .big-text.thick{
   font-weight:500;
+}
+
+ .wolv{
+    margin-bottom:30px;
+    width: 100%;
 }
