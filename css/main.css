@@ -647,7 +647,7 @@ ul.sub-menu {
 
 #action {
   background-image: url(../images/home/tour-bg.png);
-  background-color: #fbfafa;
+  
   background-repeat: no-repeat;
   height: 157px;
 
@@ -756,8 +756,8 @@ ul.sub-menu {
 
 #page-breadcrumb {
   background-image: url(../images/home/tour-bg.png);
-  background-color: #fbfafa;
-  background-repeat: repeat-x;
+  
+  background-repeat: no-repeat;
   height: 130px;
   background-position: center;
   display: table;
