@@ -1,19 +1,34 @@
-
 <html>
 
   <head>
 
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,800');
-
+   <style>
+    @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
 body{
     
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
-
     
 }
+
+div.tooltip {   
+    position: absolute;         
+    text-align: left;         
+    width: 300px;                    
+    height: 60px;
+    font-family: 'source Sans Pro', sans-serif;
+    font-weight: 500;                   
+    padding:20px;
+    font-size: 14px;      
+    background: lightgrey; 
+    border: 0px;        
+    border-radius: 20px;         
+    pointer-events: none;
+           
+}
+
 
 p{
     color: white;
@@ -35,7 +50,7 @@ p{
 }
 
     </style>
-    <script src="anesthesia/d3.v3.min.js"></script>
+    <script src="d3.v3.min.js"></script>
   </head>
 
   <body>
@@ -48,8 +63,8 @@ function group(d) { return d.group; }
 var color = d3.scale.category10();
 function colorByGroup(d) { return color(group(d)); }
 
-var width = 1324,
-    height = 600;
+var width = 1080,
+    height = 720;
 
 var svg = d3.select('#viz')
     .append('svg')
@@ -58,9 +73,11 @@ var svg = d3.select('#viz')
 
 var node, link;
 
+var div = d3.select('#viz').append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+    
 
-
-  
 
 var voronoi = d3.geom.voronoi()
     .x(function(d) { return d.x; })
@@ -84,9 +101,9 @@ function recenterVoronoi(nodes) {
 
 
 var force = d3.layout.force()
-    .charge(-4000)
-    .friction(0.3)
-    .linkDistance(20)
+    .charge(-5000)
+    .friction(0.5)
+    .linkDistance(60)
     .size([width, height]);
 
 force.on('tick', function() {
@@ -111,7 +128,7 @@ force.on('tick', function() {
         .attr('d', function(d) { return 'M'+d.join(',')+'Z'; });
 });
 
-d3.json('/anesthesia/d1.json', function(err, data) {
+d3.json('d1.json', function(err, data) {
 //d3.json('miserables.json', function(err, data) {
 
     data.nodes.forEach(function(d, i) {
@@ -129,21 +146,66 @@ d3.json('/anesthesia/d1.json', function(err, data) {
         .enter().append('g')
         .attr('title', name)
         .attr('class', 'node')
+
+
+        // .on('mouseover', function(d){
+        //         var nodeSelection = d3.select(this);
+        //         nodeSelection.select("text").style({fill:'grey'});
+        //     })
+        // .on('mouseout', function(d){
+        //       var nodeSelection = d3.select(this);
+        //       nodeSelection.select("text").style({fill:'grey'});
+        //     })
+
+
         .call( force.drag );
 
-    node.append("text")
-    .attr("dx", 12)
-    .attr("dy", ".35em")
-    .text(function(d) { return d.name });
 
     //d3.selectAll("text").style("fill","white");
+
+
 
     node.append('circle')
         .attr('r', 25)
         .attr('fill', colorByGroup)
         .attr("stroke",'white')
         .attr('stroke-width',.5)
-        .attr('fill-opacity', 0.5);
+        .on('mouseover', function(d){
+                
+             d3.select(this)
+                .transition()
+                .duration(100)
+                .attr('r', 33)
+
+            div.transition()        
+                .duration(200)      
+                .style("opacity", .9)
+               
+
+            div .html(d.des)  
+
+                .style("left", (d3.event.pageX + 10) + "px")     
+                .style("top", (d3.event.pageY - 30) + "px");
+ 
+               
+                
+            })
+
+        .on('mouseout', function(d){
+
+               d3.select(this)
+               .transition()
+                .duration(300)
+                .attr('r', 25)
+                div.transition()        
+                .duration(500)      
+                .style("opacity", 0);
+
+            })
+
+      
+            
+        .attr('fill-opacity', 0.9);
 
    
 
@@ -152,11 +214,23 @@ d3.json('/anesthesia/d1.json', function(err, data) {
         .attr('fill','white')
         //.attr('stroke', 'white');
 
+
+    node.append("text")
+    .attr("dx", 12)
+    .attr("dy", ".35em")
+    .text(function(d) { return d.name });
+
+   
+
+
     force
         .nodes( data.nodes )
         .links( data.links )
         .start();
 
+  
+     
+  
 });
 
     </script>
