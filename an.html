@@ -4,30 +4,30 @@
   <title>Anesthesia</title>
   <link href="css/main.css" rel="stylesheet">
    <style>
-    
+
 body{
-    
+
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 13px;
-    
+
 }
 
-div.tooltip {   
-    position: absolute;         
-    text-align: left;         
-    width: 300px;                    
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 300px;
     height: 60px;
     font-family: 'Open sans', sans-serif;
-    font-weight: 600;                   
+    font-weight: 600;
     padding:20px;
-    font-size: 12px; 
-    line-height: 125%;     
-    background: lightgrey; 
-    border: 0px;        
-    border-radius: 20px;         
+    font-size: 12px;
+    line-height: 125%;
+    background: lightgrey;
+    border: 0px;
+    border-radius: 20px;
     pointer-events: none;
-           
+
 }
 
 
@@ -43,7 +43,7 @@ div.tooltip {
 
 .link {
   stroke: #999;
- 
+
 }
 
     </style>
@@ -70,10 +70,10 @@ var svg = d3.select('#viz')
 
 var node, link;
 
-var div = d3.select('#viz').append("div")   
-    .attr("class", "tooltip")               
+var div = d3.select('#viz').append("div")
+    .attr("class", "tooltip")
     .style("opacity", 0);
-    
+
 
 
 var voronoi = d3.geom.voronoi()
@@ -168,24 +168,24 @@ d3.json('d1.json', function(err, data) {
         .attr("stroke",'white')
         .attr('stroke-width',.5)
         .on('mouseover', function(d){
-                
+
              d3.select(this)
                 .transition()
                 .duration(100)
                 .attr('r', 33)
 
-            div.transition()        
-                .duration(200)      
+            div.transition()
+                .duration(200)
                 .style("opacity", .9)
-               
 
-            div .html(d.des)  
 
-                .style("left", (d3.event.pageX + 10) + "px")     
+            div .html(d.des)
+
+                .style("left", (d3.event.pageX + 10) + "px")
                 .style("top", (d3.event.pageY - 30) + "px");
- 
-               
-                
+
+
+
             })
 
         .on('mouseout', function(d){
@@ -194,17 +194,17 @@ d3.json('d1.json', function(err, data) {
                .transition()
                 .duration(300)
                 .attr('r', 25)
-                div.transition()        
-                .duration(500)      
+                div.transition()
+                .duration(500)
                 .style("opacity", 0);
 
             })
 
-      
-            
+
+
         .attr('fill-opacity', 0.9);
 
-   
+
 
     node.append('circle')
         .attr('r', 5)
@@ -217,7 +217,7 @@ d3.json('d1.json', function(err, data) {
     .attr("dy", ".35em")
     .text(function(d) { return d.name });
 
-   
+
 
 
     force
@@ -225,9 +225,9 @@ d3.json('d1.json', function(err, data) {
         .links( data.links )
         .start();
 
-  
-     
-  
+
+
+
 });
 
     </script>
